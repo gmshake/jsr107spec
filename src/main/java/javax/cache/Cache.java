@@ -274,7 +274,7 @@ public interface Cache<K, V> extends Iterable<Cache.Entry<K, V>>, Closeable {
      * <p>
      * This is equivalent to:
      * <pre><code>
-     * if (!cache.containsKey(key)) {}
+     * if (!cache.containsKey(key)) {
      *   cache.put(key, value);
      *   return true;
      * } else {
